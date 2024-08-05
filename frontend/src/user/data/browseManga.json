@@ -1,0 +1,107 @@
+[
+    {
+        "id": 1,
+        "title": "One Piece",
+        "author": "Eiichiro Oda",
+        "description": "A young pirate named Monkey D. Luffy and his crew of pirates embark on a quest to find the legendary treasure known as One Piece and become the Pirate King.",
+        "imageSrc": "browseManga/onePiece.webp"
+    },
+    {
+        "id": 2,
+        "title": "My Hero Academia",
+        "author": "Kohei Horikoshi",
+        "description": "In a world where nearly everyone has superpowers called 'Quirks', a boy without any powers dreams of becoming the greatest hero.",
+        "imageSrc": "browseManga/myHeroAcademia.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Fullmetal Alchemist",
+        "author": "Hiromu Arakawa",
+        "description": "Two brothers use alchemy to search for the Philosopher's Stone to restore their bodies after a failed experiment left them in tragic states.",
+        "imageSrc": "browseManga/fullmetalAlchemist.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Dragon Ball",
+        "author": "Akira Toriyama",
+        "description": "The adventures of Son Goku from his childhood through adulthood as he trains in martial arts and explores the world in search of the Dragon Balls.",
+        "imageSrc": "browseManga/dragonBall.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Fairy Tail",
+        "author": "Hiro Mashima",
+        "description": "A young wizard, Lucy Heartfilia, joins a guild called Fairy Tail and teams up with powerful wizards to tackle various adventures and challenges.",
+        "imageSrc": "browseManga/fairyTail.jpg"
+    },
+    {
+        "id": 6,
+        "title": "JoJo’s Bizarre Adventure",
+        "author": "Hirohiko Araki",
+        "description": "The story follows the Joestar family, whose members possess unique powers that they use to fight supernatural threats across generations.",
+        "imageSrc": "browseManga/jojosBizarreAdventure.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Nana",
+        "author": "Ai Yazawa",
+        "description": "The lives of two young women named Nana who meet by chance and develop a close friendship as they navigate love and the challenges of adulthood.",
+        "imageSrc": "browseManga/nana.jpg"
+    },
+    {
+        "id": 8,
+        "title": "Naruto",
+        "author": "Masashi Kishimoto",
+        "description": "Naruto Uzumaki, a young ninja with dreams of becoming the strongest ninja and earning the respect of his peers, embarks on a journey to achieve his goals.",
+        "imageSrc": "browseManga/naruto.jpg"
+    },
+    {
+        "id": 9,
+        "title": "K-On!",
+        "author": "Kakifly",
+        "description": "A group of high school girls form a band and navigate the ups and downs of high school life while balancing their music and friendships.",
+        "imageSrc": "browseManga/kOn.jpg"
+    },
+    {
+        "id": 10,
+        "title": "Yotsuba&!",
+        "author": "Kiyohiko Azuma",
+        "description": "The daily life and adventures of a young, quirky girl named Yotsuba as she explores the world around her with her unique perspective.",
+        "imageSrc": "browseManga/yotsuba.jpg"
+    },
+    {
+        "id": 11,
+        "title": "Detective Conan",
+        "author": "Gosho Aoyama",
+        "description": "A high school detective is transformed into a child after being poisoned and must solve cases while searching for a way to return to his original body.",
+        "imageSrc": "browseManga/detectiveConan.jpg"
+    },
+    {
+        "id": 12,
+        "title": "D.Gray-man",
+        "author": "Katsura Hoshino",
+        "description": "Set in an alternate 19th century, the series follows Allen Walker, a young exorcist fighting against dark forces known as Akuma and seeking to save humanity.",
+        "imageSrc": "browseManga/dGrayMan.jpg"
+    },
+    {
+        "id": 13,
+        "title": "Little Witch Academia",
+        "author": "Yoh Yoshinari",
+        "description": "A young girl enrolls in a magical academy with hopes of becoming a great witch, and faces various trials and adventures with her friends.",
+        "imageSrc": "browseManga/littleWitchAcademia.jpg"
+    },
+    {
+        "id": 14,
+        "title": "Hinamatsuri",
+        "author": "Masao Ohtake",
+        "description": "A yakuza member's life changes when a girl with psychic abilities suddenly appears in his life, leading to comedic and heartfelt moments.",
+        "imageSrc": "browseManga/hinamatsuri.jpg"
+    },
+    {
+        "id": 15,
+        "title": "Nodame Cantabile",
+        "author": "Tomoko Ninomiya",
+        "description": "The story follows a talented but eccentric pianist and a perfectionist conductor as they navigate their careers and personal lives in the world of classical music.",
+        "imageSrc": "browseManga/nodameCantabile.webp"
+    }
+]
