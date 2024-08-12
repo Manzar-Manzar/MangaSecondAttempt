@@ -1,12 +1,11 @@
 import React from 'react'
-import Translator from '../Translator/Translator'
-import Feed from '../Feed/Feed'
+import Browse from '../Browse/Browse'
+
 
 const Home = () => {
   return (
     <>
-      <Feed />
-      <Translator />
+      <Browse />
     </>
   )
 }
