@@ -13,6 +13,7 @@ import Login from "./user/components/Login/Login"
 import GetStarted from "./user/components/GetStarted/GetStarted"
 import Contact from "./user/components/Contact/Contact"
 import Chapter from "./user/components/Chapters/Chapter";
+import AdminLogin from "./admin/components/AdminLogin";
 
 const router = createBrowserRouter([
   {
@@ -55,6 +56,10 @@ const router = createBrowserRouter([
       {
         path:"chapter",
         element: <Chapter />
+      },
+      {
+        path: "adminLogin",
+        element: <AdminLogin />
       }
     ]
   }
