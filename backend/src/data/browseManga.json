@@ -11,14 +11,14 @@
         "title": "My Hero Academia",
         "author": "Kohei Horikoshi",
         "description": "In a world where nearly everyone has superpowers called 'Quirks', a boy without any powers dreams of becoming the greatest hero.",
-        "imageSrc": "browseManga/myHeroAcademia.jpg"
+        "imageSrc": "browseManga/myHeroAcademia.avif"
     },
     {
         "id": 3,
         "title": "Fullmetal Alchemist",
         "author": "Hiromu Arakawa",
         "description": "Two brothers use alchemy to search for the Philosopher's Stone to restore their bodies after a failed experiment left them in tragic states.",
-        "imageSrc": "browseManga/fullmetalAlchemist.jpg"
+        "imageSrc": "browseManga/fullMetalAlchemist.jpg"
     },
     {
         "id": 4,

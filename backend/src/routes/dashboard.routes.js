@@ -1,15 +1,15 @@
-import { Router } from 'express';
-import {
-    getChannelStats,
-    getChannelMangas,
-} from "../controllers/dashboard.controller.js"
-import {verifyJWT} from "../middlewares/auth.middleware.js"
+// import { Router } from 'express';
+// import {
+//     getChannelStats,
+//     getChannelMangas,
+// } from "../controllers/dashboard.controller.js"
+// import {verifyJWT} from "../middlewares/auth.middleware.js"
 
-const router = Router();
+// const router = Router();
 
-router.use(verifyJWT); // Apply verifyJWT middleware to all routes in this file
+// router.use(verifyJWT); // Apply verifyJWT middleware to all routes in this file
 
-router.route("/stats").get(getChannelStats);
-router.route("/mangas").get(getChannelMangas);
+// router.route("/stats").get(getChannelStats);
+// router.route("/mangas").get(getChannelMangas);
 
-export default router
+// export default router

@@ -1,13 +1,13 @@
-import mongoose, { Schema } from "mongoose";
-import jwt from "jsonwebtoken";
-import bcrypt from "bcrypt";
+// import mongoose, { Schema } from "mongoose";
+// import jwt from "jsonwebtoken";
+// import bcrypt from "bcrypt";
 
-const UserSchema = new Schema({
-    name: String,
-    email: String,
-    password: String
-});
+// const UserSchema = new Schema({
+//     name: String,
+//     email: String,
+//     password: String
+// });
 
-const User = mongoose.model("users", UserSchema)
+// const User = mongoose.model("users", UserSchema)
 
-module.exports = User
+// module.exports = User
