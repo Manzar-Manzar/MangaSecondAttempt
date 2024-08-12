@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import browseManga from "../../data/browseManga.json"; // Import the manga data
+import browseManga from "../../../../../backend/src/data/browseManga.json"
 import { FaSearch } from 'react-icons/fa'; // Import the search icon
 
 function Search() {

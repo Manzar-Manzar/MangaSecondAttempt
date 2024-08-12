@@ -10,7 +10,9 @@ import Browse from "./user/components/Browse/Browse";
 import Search from "./user/components/Search/Search"
 import About from "./user/components/About/About"
 import Login from "./user/components/Login/Login"
-import About from "./user/components/GetStarted/GetStarted"
+import GetStarted from "./user/components/GetStarted/GetStarted"
+import Contact from "./user/components/Contact/Contact"
+import Chapter from "./user/components/Chapters/Chapter";
 
 const router = createBrowserRouter([
   {
@@ -45,9 +47,14 @@ const router = createBrowserRouter([
       {
         path:"contact",
         element:<Contact />
-      }, {
+      }, 
+      {
         path: "admin",
         element:<Admin />
+      },
+      {
+        path:"chapter",
+        element: <Chapter />
       }
     ]
   }
