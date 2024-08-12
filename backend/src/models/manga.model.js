@@ -1,47 +1,26 @@
-// import mongoose, {Schema} from "mongoose";
-// import mongooseAggregatePaginate from "mongoose-aggregate-paginate-v2";
+import mongoose, {Schema} from "mongoose"
 
-// const imageSchema = new Schema(
-//     {
-//         imageFile: {
-//             type: String, //cloudinary url
-//             required: true
-//         },
-//         thumbnail: {
-//             type: String, //cloudinary url
-//             required: true
-//         },
-//         title: {
-//             type: String, 
-//             required: true
-//         },
-//         description: {
-//             type: String, 
-//             required: true
-//         },
-//         duration: {
-//             type: Number, 
-//             required: true
-//         },
-//         views: {
-//             type: Number,
-//             default: 0
-//         },
-//         isPublished: {
-//             type: Boolean,
-//             default: true
-//         },
-//         owner: {
-//             type: Schema.Types.ObjectId,
-//             ref: "User"
-//         }
+const mangaSchema = new Schema({
+    imageFile: {
+        type: String,
+        required: true,
+    },
+    thumbnail: {
+        type: String,
+        required: true,
+    },
+    title: {
+        type: String,
+        required: true,
+    },
+    description: {
+        type: String,
+        required: true
+    },
+    views: {
+        type: Number,
+        default: 0,
+    }
+}, {timestamps: true})
 
-//     }, 
-//     {
-//         timestamps: true
-//     }
-// )
-
-// imageSchema.plugin(mongooseAggregatePaginate)
-
-// export const image = mongoose.model("image", imageSchema)
+export const Manga = mongoose.model("Manga", mangaSchema)
