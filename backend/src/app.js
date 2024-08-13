@@ -22,12 +22,12 @@ app.use(express.urlencoded({ extended: true, limit: "16kb" }))
 app.use(express.static("public"))
 app.use(cookieParser())
 
-// import userRouter from './routes/user.routes.js'
-// import mangaRouter from "./routes/manga.routes.js"
-// import dashboardRouter from "./routes/dashboard.routes.js"
-// app.use("/api/v1/users", userRouter)
-// app.use("/api/v1/dashboard", dashboardRouter)
+import userRouter from './routes/user.routes.js'
 
-// http://localhost:8000/api/v1/users/register
+// Routes declaration 
+// You have to use 'use' as we have to use middlewares
+app.use("/users", userRouter)
+// Till here the url is http://localhost:8000/users
+// Then it gives control to the userRouter.
 
 export { app }

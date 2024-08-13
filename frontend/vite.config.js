@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   server: {
     proxy: {
-      '/manga': 'http://localhost:3001'
+      '/manga': 'http://localhost:8000'
     },
   },
   plugins: [react()],
