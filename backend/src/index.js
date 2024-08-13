@@ -24,10 +24,13 @@
 import dotenv from "dotenv"
 import connectDB from "./db/index.js"
 import {app} from './app.js'
+import cors from "cors"
 
 dotenv.config({
     path: './env'
 })
+
+app.use(cors())
 
 
 connectDB()
@@ -43,3 +46,8 @@ connectDB()
     .catch((error) => {
         console.log("MONGODB CONNECTION ERROR", error)
     })
+
+    app.use('/test', () => {
+        console.log("Test")
+    })
+
