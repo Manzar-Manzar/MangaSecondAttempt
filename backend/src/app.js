@@ -27,6 +27,9 @@ import userRouter from './routes/user.routes.js'
 // Routes declaration 
 // You have to use 'use' as we have to use middlewares
 app.use("/users", userRouter)
+app.use('/test', (req, res) => {
+    res.send("Hellllllllllloooooooooo")
+})
 // Till here the url is http://localhost:8000/users
 // Then it gives control to the userRouter.
 

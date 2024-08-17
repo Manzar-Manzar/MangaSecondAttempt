@@ -1,12 +1,9 @@
-
-
 import { User} from "../models/user.model.js"
 import { asyncHandler } from "../utils/asyncHandler.js"
 
 const registerUser = asyncHandler (async (req, res) => {
-    res.status(200).json({
-        message: "ok"
-    })
+    console.log("Triggered");
+    return res.status(200).json("ok");
 })
 const login = () => {
     console.log("Login")

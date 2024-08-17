@@ -1,53 +1,48 @@
-// First Method to connect to db
+import dotenv from "dotenv";
+import connectDB from "./db/index.js";
+import { app } from './app.js';
+import cors from "cors";
 
-// import mongoose from "mongoose"
-// import { DB_NAME } from "./constants"
-// import express from "express"
+dotenv.config({ path: './env' });
 
-// const app = express()
-// ;( async () => {
-//     try {
-//         await mongoose.connect(`${process.env.MONGODB_URI}/${DB_NAME}`)
-//         app.on("error", () => {
-//             console.log("App not able to talk to server: ", error)
-//             throw error;
-//         })
+app.use(cors());
 
-//         app.listen(process.env.PORT, () => {
-//             console.log(`App is listening on port ${process.env.PORT}`)
-//         })
-//     } catch (error) {
-//         console.log("DB error : ", error);
-//     }
-// } )()
+// const whitelist = ['http://localhost:5173', 'http://localhost:5174'];
+// const corsOptionsDelegate = function (req, callback) {
+//   let corsOptions;
+//   if (whitelist.indexOf(req.header('Origin')) !== -1) {
+//     corsOptions = { origin: true }; // reflect the requested origin in the CORS response
+//   } else {
+//     corsOptions = { origin: false }; // disable CORS for this request
+//   }
+//   callback(null, corsOptions); // callback expects two parameters: error and options
+// };
 
-import dotenv from "dotenv"
-import connectDB from "./db/index.js"
-import {app} from './app.js'
-import cors from "cors"
-
-dotenv.config({
-    path: './env'
-})
-
-app.use(cors())
-
+// app.get('/products', cors(corsOptionsDelegate), function (req, res) {
+//   res.json({ msg: 'This is CORS-enabled for a whitelisted domain.' });
+// });
 
 connectDB()
-    .then(() => {
-        app.on("error", () => {
-            console.log("App not able to talk to server: ", error)
-            throw error;
-        })
-        app.listen(process.env.PORT || 8000, () => {
-            console.log(`SERVER IS RUNNING AT PORT: ${process.env.PORT}`)
-        })
-    })
-    .catch((error) => {
-        console.log("MONGODB CONNECTION ERROR", error)
-    })
+  .then(() => {
+    app.on("error", (error) => {
+      console.log("App not able to talk to server: ", error);
+      throw error;
+    });
 
-    app.use('/test', () => {
-        console.log("Test")
-    })
+    const port = process.env.PORT || 5001;
+    app.listen(port, () => {
+      console.log(`SERVER IS RUNNING AT PORT: ${port}`);
+    });
 
+    app.use('/hello', (req, res) => {
+      res.send("TEST case");
+    });
+
+  })
+  .catch((error) => {
+    console.log("MONGODB CONNECTION ERROR", error);
+  });
+
+app.use('/test', (req, res) => {
+  res.send("///text");
+});

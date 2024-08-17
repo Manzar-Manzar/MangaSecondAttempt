@@ -9,7 +9,7 @@ const userSchema = new Schema(
             unique: true,
             lowercase: true,
             trim: true,
-            // To make the users searchable
+            // Index is used to make the users searchable
             index: true
         },
         email: {
