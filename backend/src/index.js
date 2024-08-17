@@ -26,6 +26,8 @@ connectDB()
   .then(() => {
     app.on("error", (error) => {
       console.log("App not able to talk to server: ", error);
+      console.log("Hello")
+      console.log(".env not working")
       throw error;
     });
 
