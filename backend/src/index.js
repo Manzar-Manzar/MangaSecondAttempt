@@ -7,6 +7,17 @@ dotenv.config({ path: './env' });
 
 app.use(cors());
 
+connectDB()
+.then(() => {
+  app.listen(process.env.PORT, () => {
+    console.log(`Server is running at ${process.env.PORT}`);
+  });
+})
+.catch((err) => {
+  console.log("MongoDB connection failed !!", err);
+});
+
+
 // const whitelist = ['http://localhost:5173', 'http://localhost:5174'];
 // const corsOptionsDelegate = function (req, callback) {
 //   let corsOptions;
@@ -20,31 +31,35 @@ app.use(cors());
 
 // app.get('/products', cors(corsOptionsDelegate), function (req, res) {
 //   res.json({ msg: 'This is CORS-enabled for a whitelisted domain.' });
+// });dotenv.config();
+
+
+
+
+
+// connectDB()
+//   .then(() => {
+//     app.on("error", (error) => {
+//       console.log("App not able to talk to server: ", error);
+//       console.log("Hello")
+//       console.log(".env not working")
+//       throw error;
+//     });
+
+//     const port = process.env.PORT || 5001;
+//     app.listen(port, () => {
+//       console.log(`SERVER IS RUNNING AT PORT: ${port}`);
+//     });
+
+//     app.use('/hello', (req, res) => {
+//       res.send("TEST case");
+//     });
+
+//   })
+//   .catch((error) => {
+//     console.log("MONGODB CONNECTION ERROR", error);
+//   });
+
+// app.use('/test', (req, res) => {
+//   res.send("///text");
 // });
-
-connectDB()
-  .then(() => {
-    app.on("error", (error) => {
-      console.log("App not able to talk to server: ", error);
-      console.log("Hello")
-      console.log(".env not working")
-      throw error;
-    });
-
-    const port = process.env.PORT || 5001;
-    app.listen(port, () => {
-      console.log(`SERVER IS RUNNING AT PORT: ${port}`);
-    });
-
-    app.use('/hello', (req, res) => {
-      res.send("TEST case");
-    });
-
-  })
-  .catch((error) => {
-    console.log("MONGODB CONNECTION ERROR", error);
-  });
-
-app.use('/test', (req, res) => {
-  res.send("///text");
-});
